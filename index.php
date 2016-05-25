@@ -37,10 +37,10 @@
 					}
 					else if($i == 3){
 					if($theArray[occupation] != NULL){
-							echo "--Occupation: "."$theArray[occupation]"." - - - - ";
+							echo "--Occupation: "."$theArray[occupation]"." <br><br>";
 						}
 						else{
-							echo "--Occupation: Data not found  - - - - ";
+							echo "--Occupation: Data not found  <br><br>";
 						}
 					}
 				}
