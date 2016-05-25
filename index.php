@@ -7,14 +7,23 @@
 	<body>
 		<?php
 
-			$user_array = include("user-array.php");
+			include'user-array.php';
 
-			echo "hi";
 
 			foreach ($user_array as $theArray) {
-				echo "how is it going";
-				foreach ($theArray as $theInfo) {
-					echo "$theInfo";
+				for($i = 0; $i < 4; $i++) {
+					if($i == 0){
+						echo "$theArray[first_name]"." ";
+					}
+					else if($i == 1){
+						echo "$theArray[last_name]"." ";
+					}
+					else if($i == 2){
+						echo "$theArray[age]"." ";
+					}
+					else if($i == 3){
+						echo "$theArray[occupation]"." ";
+					}
 				}
 			}
 			unset($theArray);
